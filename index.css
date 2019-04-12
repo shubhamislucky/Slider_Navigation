@@ -1,0 +1,102 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+html,body{
+	width: 100%;
+	height: 100%;
+	font-family: 'Helvetica',arial,sans-serif;
+}
+#wrapper{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	background-color: #555;
+}
+#topper{
+	position: relative;
+	width: 100%;
+	height: 80px;
+	background-color: orange;
+}
+.center{
+	display: block;
+	margin: 0 auto;
+	text-align: center;
+	padding-top: 25px;
+	font-size: 1.5em;
+	position: relative;
+	letter-spacing: 1px;
+}
+#middle{
+	position: relative;
+	margin: 0 auto;
+	max-width: 650px;
+	text-align: center;
+}
+#middle_text{
+	font-size: 2.3em;
+	text-align: center;
+	padding-top: 140px;
+	letter-spacing: 2px;
+	color: #fff;
+	line-height: 1.5em;
+}
+.button{
+	position: relative;
+	max-width: 150px;
+	margin: 0 auto;
+	padding: 23px 50px 23px 50px;
+	background-color: orange;
+	border-radius: 5px;
+	font-size: 1.2em;
+	margin-top: 80px;
+}
+
+/* Sliding nav bar */
+
+#slide{
+	position: absolute;
+	min-width: 200px;
+	background-color: #333;
+	height: 100%;
+	top: 0px;
+	left: -200px;
+	text-align: right;
+	font-size: 1.1em;
+	z-index: 50;
+	transition: 0.8s ease-in-out;
+}
+#slide_ul{
+	position: relative;
+	padding: 200px 20px 0px 0px;
+	height: auto;
+	display: block;
+}
+#slide_ul li{
+	padding-top: 15px;
+	color: #999;
+}
+#slide_ul li:hover{
+	color: #efefef;
+	cursor: pointer;
+}
+.ham{
+	z-index: 100;
+	position: fixed;
+	color: #fff;
+	left: 20px;
+	top: 15px;
+	font-size: 35px;
+}
+.ham:hover{
+	cursor: pointer;
+}
+#input-check{
+	display: none;
+}
+#input-check:checked ~ #slide{
+	position: absolute;
+	left: 0px;
+}
+
